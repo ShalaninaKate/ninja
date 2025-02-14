@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shop</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <picture>
+      <source srcset="./img/bg/main.webp" type="image/webp">
+      <img src="./img/bg/main.jpg" class="image-bg image-bg--shop" width="" height="" alt="">
+    </picture>
+
+    <main class="main page">
+      <header class="user">
+  <div class="user__image">
+    <picture>
+      <source srcset="../img/user.webp" type="image/webp">
+      <img src="../img/user.png" class="user__picture" width="" height="" alt="ninja">
+    </picture>
+  </div>
+  <div class="user__info">
+    <div class="user__rating">
+      <div class="user__name">Satoshi Nakamura</div>
+      <div class="user__stars rating">
+        <div class="rating__items">
+          <span class="rating__item">
+            <svg class="rating__item-icon filled">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon filled">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon filled">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+        </div>
+
+      </div>
+    </div>
+    <ul class="user__progress progress">
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled last-filled"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+    </ul>
+    <div class="user__amount">
+      <span class="user__value">500.000</span>
+      <span class="user__value">1.000.000</span>
+    </div>
+  </div>
+</header>
+
+      <div class="page__main">
+        <div class="wallet">
+          <h2 class="wallet__title page__title">Wallet</h2>
+          <div class="wallet__form page__form">
+            <div class="wallet__item">
+              <label class="wallet__label">Your Wallet Address</label>
+              <div class="wallet__input">
+                <input type="text" class="wallet__input-control" value="0x46a7fa6fag412dg1sdg4s">
+                <button class="wallet__btn">
+                  <img src="./img/svg/copy.svg" alt="copy-icon" class="wallet__btn-icon">
+                </button>
+              </div>
+            </div>
+            <button class="wallet__button button button--red">Connect Another Wallet</button>
+          </div>
+        </div>
+        <div class="settings">
+          <h2 class="settings__title page__title">Settings</h2>
+          <ul class="page__list">
+            <li class="page__item item-settings">
+              <a href="" class="item-settings__link">
+                <span class="item-settings__text">Leaderboard</span>
+                <img src="./img/svg/arrow.svg" alt="arrow" class="item-settings__arrow">
+              </a>
+            </li>
+            <li class="page__item item-settings">
+              <a href="" class="item-settings__link">
+                <span class="item-settings__text">Language</span>
+                <img src="./img/svg/arrow.svg" alt="arrow" class="item-settings__arrow">
+              </a>
+            </li>
+            <li class="page__item item-settings">
+              <div class="item-settings__link">
+                <span class="item-settings__text">Vibration</span>
+                <button class="item-settings__switch switch-btn"></button>
+              </div>
+            </li>
+            <li class="page__item item-settings">
+              <div class="item-settings__link">
+                <span class="item-settings__text">Animation</span>
+                <button class="item-settings__switch switch-btn"></button>
+              </div>
+            </li>
+            <li class="page__item item-settings">
+              <a href="" class="item-settings__link">
+                <span class="item-settings__text">Agreement</span>
+                <img src="./img/svg/arrow.svg" alt="arrow" class="item-settings__arrow">
+              </a>
+            </li>
+            <li class="page__item item-settings">
+              <a href="" class="item-settings__link">
+                <span class="item-settings__text">Rules</span>
+                <img src="./img/svg/arrow.svg" alt="arrow" class="item-settings__arrow">
+              </a>
+            </li>
+            <li class="page__item item-settings">
+              <a href="" class="item-settings__link">
+                <span class="item-settings__text">Feedback</span>
+                <img src="./img/svg/arrow.svg" alt="arrow" class="item-settings__arrow">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <aside class="sidebar">
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link nav__link--market ">
+          <picture>
+            <source srcset="../img/menu/market.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/market.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <span class="nav__link-text">Market</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="../img/menu/tasks.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/tasks.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <span class="nav__link-text">Tasks</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <picture>
+            <source srcset="../img/menu/home.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/home.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Home</div>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="../img/menu/shop.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/shop.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Shop</div>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="../img/menu/map.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/map.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Map</div>
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</aside>
+
+    </main>
+
+  </div>
+</body>
+
+</html>

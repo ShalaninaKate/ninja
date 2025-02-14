@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>market_sell</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <picture>
+      <source srcset="./img/bg/main.webp" type="image/webp">
+      <img src="./img/bg/main.jpg" class="image-bg image-bg--shop" width="" height="" alt="">
+    </picture>
+
+    <main class="main page">
+      <header class="user">
+  <div class="user__image">
+    <picture>
+      <source srcset="../img/user.webp" type="image/webp">
+      <img src="../img/user.png" class="user__picture" width="" height="" alt="ninja">
+    </picture>
+  </div>
+  <div class="user__info">
+    <div class="user__rating">
+      <div class="user__name">Satoshi Nakamura</div>
+      <div class="user__stars rating">
+        <div class="rating__items">
+          <span class="rating__item">
+            <svg class="rating__item-icon filled">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon filled">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon filled">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+        </div>
+
+      </div>
+    </div>
+    <ul class="user__progress progress">
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled last-filled"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+    </ul>
+    <div class="user__amount">
+      <span class="user__value">500.000</span>
+      <span class="user__value">1.000.000</span>
+    </div>
+  </div>
+</header>
+
+      <div class="page__main market">
+        <div class="market__header">
+          <h1 class="market__title">Market</h1>
+          <div class="market__header-links">
+            <a href="#" class="market__header-link">Buy</a>
+            <a href="#" class="market__header-link active">Sell</a>
+          </div>
+        </div>
+        <button type="button" class="market__sell-item button button--green">Sell item</button>
+        <form class="market__form form">
+          <span class="market__form-title">Your Items on Market</span>
+          <div class="input input--search">
+            <input type="text" class="input__control input__control--search" placeholder="Search your item">
+            <button class="input__btn">
+              <img src="./img/svg/search.svg" alt="search" class="input__btn-icon">
+            </button>
+          </div>
+          <div class="input input-select">
+            <input class="input__control input__control dropdown-input" type="text" name="" value="All Names" readonly
+              placeholder="">
+            <label class="input__label">Name</label>
+            <button class="input__btn dropdown-button">
+              <img src="./img/svg/arrow.svg" alt="search" class="input__btn-icon input__btn-icon--arrow">
+            </button>
+            <ul class="dropdown">
+              <li class="dropdown__item">All Names</li>
+              <li class="dropdown__item">Katana</li>
+              <li class="dropdown__item">Ghost blade</li>
+              <li class="dropdown__item">Ninja Nunchaki</li>
+              <li class="dropdown__item">Yari</li>
+            </ul>
+          </div>
+          <div class="input input-select">
+            <input class="input__control input__control dropdown-input" type="text" name="" value="All Models" readonly
+              placeholder="">
+            <label class="input__label">Model</label>
+            <button class="input__btn dropdown-button">
+              <img src="./img/svg/arrow.svg" alt="search" class="input__btn-icon input__btn-icon--arrow">
+            </button>
+            <ul class="dropdown">
+              <li class="dropdown__item">All Models</li>
+              <li class="dropdown__item">Long Sword</li>
+              <li class="dropdown__item">Knife</li>
+              <li class="dropdown__item">Staff</li>
+            </ul>
+
+          </div>
+        </form>
+        <ul class="market__list">
+          <li class="market__item item-market">
+            <div class="item-market__picture">
+              <picture>
+                <source srcset="./img/shop/sword.webp" type="image/webp">
+                <img src="./img/shop/sword.png" class="item-market__picture-img" width="" height=""
+                  alt="sword">
+              </picture>
+            </div>
+            <div class="item-market__info">
+              <div class="item-market__details">
+                <span class="item-market__name">KATANA</span>
+                <div class="item-market__level">LVL <span>3</span></div>
+              </div>
+              <span class="item-market__type">Type: <span class="item-market__type--orange">Long Sword</span></span>
+
+            </div>
+            <a href="#" class="item-market__btn button button--red">Remove from sales</a>
+          </li>
+         <li class="market__item item-market">
+            <div class="item-market__picture">
+              <picture>
+                <source srcset="./img/shop/steel.webp" type="image/webp">
+                <img src="./img/shop/steel.png" class="item-market__picture-img" width="" height=""
+                  alt="steel">
+              </picture>
+            </div>
+            <div class="item-market__info">
+              <div class="item-market__details">
+                <span class="item-market__name">Ninja Nunchaki</span>
+                <div class="item-market__level">LVL <span>3</span></div>
+              </div>
+              <span class="item-market__type">Type: <span class="item-market__type--orange">Staff</span></span>
+
+            </div>
+            <a href="#" class="item-market__btn button button--red">Remove from sales</a>
+          </li>
+          <li class="market__item item-market">
+            <div class="item-market__picture">
+              <picture>
+                <source srcset="./img/shop/yari.webp" type="image/webp">
+                <img src="./img/shop/yari.png" class="item-market__picture-img" width="" height=""
+                  alt="yari">
+              </picture>
+            </div>
+            <div class="item-market__info">
+              <div class="item-market__details">
+                <span class="item-market__name">Yari</span>
+                <div class="item-market__level">LVL <span>3</span></div>
+              </div>
+              <span class="item-market__type">Type: <span class="item-market__type--orange">Staff</span></span>
+
+            </div>
+            <a href="#" class="item-market__btn button button--red">Remove from sales</a>
+          </li>
+
+        </ul>
+
+      </div>
+      <aside class="sidebar">
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link nav__link--market active">
+          <picture>
+            <source srcset="../img/menu/market.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/market.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <span class="nav__link-text">Market</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="../img/menu/tasks.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/tasks.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <span class="nav__link-text">Tasks</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="../img/menu/home.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/home.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Home</div>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="../img/menu/shop.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/shop.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Shop</div>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="../img/menu/map.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/map.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Map</div>
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</aside>
+
+    </main>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Main</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <picture>
+      <source srcset="./img/bg/main.webp" type="image/webp">
+      <img src="./img/bg/main.jpg" class="image-bg" width="" height="" alt="">
+    </picture>
+
+    <main class="main home">
+      <header class="user">
+  <div class="user__image">
+    <picture>
+      <source srcset="../img/user.webp" type="image/webp">
+      <img src="../img/user.png" class="user__picture" width="" height="" alt="ninja">
+    </picture>
+  </div>
+  <div class="user__info">
+    <div class="user__rating">
+      <div class="user__name">Satoshi Nakamura</div>
+      <div class="user__stars rating">
+        <div class="rating__items">
+          <span class="rating__item">
+            <svg class="rating__item-icon filled">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon filled">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon filled">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+        </div>
+
+      </div>
+    </div>
+    <ul class="user__progress progress">
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled last-filled"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+    </ul>
+    <div class="user__amount">
+      <span class="user__value">500.000</span>
+      <span class="user__value">1.000.000</span>
+    </div>
+  </div>
+</header>
+
+      <div class="home__main">
+        <div class="home__info">
+          <div class="home__info-item indicator">
+            <span class="home__info-title indicator__title">Enegry</span>
+            <div class="home__info-body indicator__circle">
+              <img class="home__info-circle indicator__circle-icon" src="./img/svg/circle-energy.svg"
+                alt="circle-energy">
+              <picture>
+                <source srcset="./img/energy.webp" type="image/webp">
+                <img src="./img/energy.png" class="indicator__image" width="" height="" alt="energy">
+              </picture>
+            </div>
+          </div>
+          <div class="home__balance">
+            <span class="home__balance-title">Total Balance</span>
+            <div class="home__balance-amount">
+              <picture>
+                <source srcset="./img/attention-token.webp" type="image/webp">
+                <img src="./img/attention-token.png" class="home__balance-image" width="" height=""
+                  alt="attention-token">
+              </picture>
+              <span class="home__balance-value">149,000</span>
+            </div>
+
+          </div>
+          <div class="home__info-item indicator">
+            <span class="home__info-title indicator__title">Coins/click</span>
+            <div class="home__info-body indicator__circle">
+              <img class="home__info-circle indicator__circle-icon" src="./img/svg/circle-coins.svg" alt="circle-coins">
+              <span class="home__info-amount indicator__amount">20</span>
+            </div>
+          </div>
+        </div>
+        <div class="home__ninja">
+          <picture>
+            <source srcset="./img/huobi-token.webp" type="image/webp">
+            <img src="./img/huobi-token.png" class="home__ninja-token-image" width="" height="" alt="huobi-token">
+          </picture>
+          <picture>
+            <source srcset="./img/ninja.webp" type="image/webp">
+            <img src="./img/ninja.png" class="home__ninja-image" width="" height="" alt="ninja">
+          </picture>
+        </div>
+        <div class="home__actions">
+          <a href="#" class="home__link">
+            <picture>
+              <source srcset="./img/game.webp" type="image/webp">
+              <img src="./img/game.png" class="home__link-image" width="" height="" alt="game">
+            </picture>
+            <div class="home__link-text">Game Menu</div>
+          </a>
+          <a href="#" class="home__link">
+            <picture>
+              <source srcset="./img/boosts.webp" type="image/webp">
+              <img src="./img/boosts.png" class="home__link-image" width="" height="" alt="boosts">
+            </picture>
+            <div class="home__link-text">Boosts</div>
+          </a>
+        </div>
+      </div>
+      <aside class="sidebar">
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link nav__link--market ">
+          <picture>
+            <source srcset="../img/menu/market.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/market.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <span class="nav__link-text">Market</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="../img/menu/tasks.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/tasks.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <span class="nav__link-text">Tasks</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <picture>
+            <source srcset="../img/menu/home.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/home.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Home</div>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="../img/menu/shop.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/shop.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Shop</div>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="../img/menu/map.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/map.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Map</div>
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</aside>
+
+    </main>
+
+  </div>
+</body>
+
+</html>

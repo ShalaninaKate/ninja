@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shop item</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <picture>
+      <source srcset="./img/bg/shop.webp" type="image/webp">
+      <img src="./img/bg/shop.jpg" class="image-bg image-bg--shop" width="" height="" alt="">
+    </picture>
+
+    <main class="main page">
+      <header class="user">
+  <div class="user__image">
+    <picture>
+      <source srcset="../img/user.webp" type="image/webp">
+      <img src="../img/user.png" class="user__picture" width="" height="" alt="ninja">
+    </picture>
+  </div>
+  <div class="user__info">
+    <div class="user__rating">
+      <div class="user__name">Satoshi Nakamura</div>
+      <div class="user__stars rating">
+        <div class="rating__items">
+          <span class="rating__item">
+            <svg class="rating__item-icon filled">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon filled">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon filled">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span class="rating__item">
+            <svg class="rating__item-icon">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </span>
+        </div>
+
+      </div>
+    </div>
+    <ul class="user__progress progress">
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled"></li>
+      <li class="progress__segment filled last-filled"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+      <li class="progress__segment"></li>
+    </ul>
+    <div class="user__amount">
+      <span class="user__value">500.000</span>
+      <span class="user__value">1.000.000</span>
+    </div>
+  </div>
+</header>
+
+      <div class="page__item item-action item-action--shop">
+        <div class="item-action__header">
+          <h2 class="item-action__title">Katana</h2>
+          <div class="item-action__type">Reward: <span class="item-action__type--orange">x2 per swype</span></div>
+        </div>
+        <div class="item-action__picture">
+          <picture>
+            <source srcset="./img/shop/sword.webp" type="image/webp">
+            <img src="./img/shop/sword.png" class="item-action__image" width="" height="" alt="sword">
+          </picture>
+        </div>
+        <div class="item-action__purchase purchase">
+          <div class="purchase__items">
+            <div class="purchase__item">
+              <img src="./img/svg/wallet.svg" alt="wallet" class="purchase__item-icon">
+              <span class="purchase__item-text">50 000</span>
+            </div>
+            <div class="purchase__item purchase__item--type">
+              <img src="./img/svg/sword.svg" alt="sword" class="buy-action__item-icon">
+              <span class="purchase__item-text">Long Sword</span>
+            </div>
+          </div>
+          <button type="button" class="purchase__btn button button--orange">BUY</button>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link nav__link--market ">
+          <picture>
+            <source srcset="../img/menu/market.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/market.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <span class="nav__link-text">Market</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="../img/menu/tasks.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/tasks.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <span class="nav__link-text">Tasks</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="../img/menu/home.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/home.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Home</div>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <picture>
+            <source srcset="../img/menu/shop.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/shop.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Shop</div>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="../img/menu/map.webp" type="image/webp">
+            <img loading="lazy" src="../img/menu/map.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Map</div>
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</aside>
+
+    </main>
+
+  </div>
+</body>
+
+</html>
