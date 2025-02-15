@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Supermarket</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper wrapper--map">
+
+    <picture>
+      <source srcset="./img/bg/supermarket.webp" type="image/webp">
+      <img src="./img/bg/supermarket.jpg" class="image-bg image-bg--map" width="" height="" alt="">
+    </picture>
+
+    <main class="main location">
+      <div class="location__header">
+        <h1 class="location__header-title">supermarket</h1>
+        <p class="location__header-text">Energy restoration</p>
+      </div>
+      <div class="location__ninja">
+
+        <picture class="location__ninja-image">
+          <source srcset="./img/ninja.webp" type="image/webp">
+          <img src="./img/ninja.png" class="" width="" height="" alt="ninja">
+        </picture>
+      </div>
+      <div class="location__progress ">
+        <div class="location__progress-title">Energy</div>
+        <div class="location__progress-bar progress-bar">
+          <div class="progress-bar__line" style="width: 20%;"></div>
+        </div>
+        <div class="location__progress-amount">
+          <span>0</span>
+          <span>150</span>
+        </div>
+      </div>
+      <div class="location__start">
+        <div class="location__start-energy">
+          <img src="./img/svg/energy.svg" alt="energy" class="location__start-icon">
+          <span class="location__start-amount">25</span>
+        </div>
+        <button class="location__button button button--red">start recovery</button>
+      </div>
+
+      <aside class="sidebar">
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link nav__link--market ">
+          <picture>
+            <source srcset="./img/menu/market.webp" type="image/webp">
+            <img loading="lazy" src="./img/menu/market.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <span class="nav__link-text">Market</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="./img/menu/tasks.webp" type="image/webp">
+            <img loading="lazy" src="./img/menu/tasks.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <span class="nav__link-text">Tasks</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="./img/menu/home.webp" type="image/webp">
+            <img loading="lazy" src="./img/menu/home.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Home</div>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <picture>
+            <source srcset="./img/menu/shop.webp" type="image/webp">
+            <img loading="lazy" src="./img/menu/shop.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Shop</div>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <picture>
+            <source srcset="./img/menu/map.webp" type="image/webp">
+            <img loading="lazy" src="./img/menu/map.png" class="nav__link-icon" width="" height="" alt="">
+          </picture>
+
+          <div class="nav__link-text">Map</div>
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</aside>
+
+    </main>
+
+  </div>
+</body>
+
+</html>

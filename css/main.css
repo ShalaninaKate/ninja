@@ -190,8 +190,28 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  background-color: #f5f5f5;
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  z-index: -1;
+}
+.lock body {
+  overflow: hidden;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+}
+.lock body::after {
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
 }
 
 .wrapper {
@@ -1350,6 +1370,11 @@ body {
   text-align: center;
   font-size: 0.9375rem;
 }
+.item-action__form {
+  position: relative;
+  z-index: 1;
+}
+
 .purchase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1535,11 +1560,24 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  outline: none;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 @media (max-width: 23.75em) {
   .wallet__input-control {
     padding: 1.25rem 3.75rem 1.25rem 1.25rem;
   }
+}
+.wallet__input-control:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #4a4a4a;
+  box-shadow: 0 0 0 2px #4a4a4a;
+}
+.wallet__input-control:active {
+  outline: none;
 }
 .wallet__btn {
   position: absolute;
@@ -1681,7 +1719,6 @@ body {
 }
 .input {
   position: relative;
-  z-index: 1;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 calc(50% - 0.625rem);
   flex: 1 1 calc(50% - 0.625rem);
@@ -2470,7 +2507,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   position: fixed;
-  z-index: 1000;
+  z-index: 500;
   bottom: 0.6875rem;
   width: calc(100% - 2rem);
   left: 1rem;
@@ -2742,4 +2779,103 @@ body {
   height: 3.75rem;
   font-family: var(--second-family);
   font-size: 1.875rem;
+}
+.location__finish {
+  padding: 3.125rem 0.625rem 4.375rem;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 23.0625rem;
+  bottom: -100%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
+  background: linear-gradient(180deg, #000 0%, #000 100%);
+  border-radius: 16px 16px 0 0;
+  -webkit-transition: bottom 0.3s;
+  transition: bottom 0.3s;
+}
+.location__finish::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  max-width: 11.875rem;
+  max-height: 11.875rem;
+  width: 90%;
+  height: 90%;
+  border-radius: 100%;
+  background-color: var(--red);
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+}
+.location__finish.open {
+  bottom: 0;
+}
+.location__finish-title {
+  margin-bottom: 1.0625rem;
+  font-family: var(--second-family);
+  text-align: center;
+  line-height: 90%;
+  font-size: 3rem;
+}
+@media (max-width: 23.75em) {
+  .location__finish-title {
+    font-size: 2.5rem;
+  }
+}
+.location__finish-text {
+  margin-bottom: 2.375rem;
+  max-width: 19.375rem;
+  text-align: center;
+  font-size: 0.9375rem;
+}
+.location__finish-button {
+  max-width: 16.875rem;
+  height: 3.75rem;
+  font-size: 1.25rem;
+}
+
+.timer {
+  padding: 0.375rem 0.375rem;
+  height: 3.75rem;
+  background-color: var(--background);
+  border-radius: 8px;
+  position: relative;
+}
+.timer__bar {
+  height: 100%;
+  background: #4a4a4a;
+  border-radius: 8px;
+}
+.timer__value {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+.timer__text {
+  margin-top: 0.25rem;
+  font-family: var(--second-family);
+  font-size: 1.875rem;
+  line-height: 100%;
 }
