@@ -261,6 +261,10 @@ body::after {
   -o-object-position: 50% 50%;
   object-position: 50% 50%;
 }
+.image-bg--mapmain {
+  -o-object-position: 100% 50%;
+  object-position: 100% 50%;
+}
 
 .main {
   padding: 1rem 0.875rem 5.625rem;
@@ -373,6 +377,9 @@ body::after {
   border: 2px solid #303030;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 16px;
+}
+.page__main--shop {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .page__header {
   margin: 0 1.25rem 0rem 0.625rem;
@@ -514,6 +521,7 @@ body::after {
 }
 .user--hunt {
   padding: 0.625rem 0.75rem;
+  background: rgba(0, 0, 0, 0.6);
 }
 .user--hunt .user__value {
   font-size: 0.8125rem;
@@ -2314,6 +2322,9 @@ body::after {
 .rocks--2 {
   right: -15%;
 }
+.rocks--3 {
+  right: 22%;
+}
 
 .rock {
   cursor: pointer;
@@ -2347,7 +2358,7 @@ body::after {
   background: #101010;
 }
 .card--reversal .card__back img {
-  width: 80%;
+  width: 60%;
 }
 .card--reversal .card__back.mine {
   background: var(--red);
@@ -2593,6 +2604,12 @@ body::after {
   -ms-transform: scale(2) translate(0px, -0.625rem);
   transform: scale(2) translate(0px, -0.625rem);
 }
+.nav__link--task.active::before {
+  background-color: var(--green);
+}
+.nav__link--shop.active::before {
+  background-color: #c0530e;
+}
 .nav__link--market.active .nav__link-icon {
   -webkit-filter: brightness(0.3) saturate(0);
   filter: brightness(0.3) saturate(0);
@@ -2779,6 +2796,15 @@ body::after {
   height: 3.75rem;
   font-family: var(--second-family);
   font-size: 1.875rem;
+  font-weight: 400;
+}
+.location__button--armory {
+  font-size: 1.5rem;
+}
+@media (max-width: 21.875em) {
+  .location__button {
+    font-size: 1.25rem;
+  }
 }
 .location__finish {
   padding: 3.125rem 0.625rem 4.375rem;
@@ -2847,6 +2873,54 @@ body::after {
   max-width: 16.875rem;
   height: 3.75rem;
   font-size: 1.25rem;
+}
+.location__list {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.location__item {
+  position: absolute;
+}
+.location__item--supermarket {
+  top: 25%;
+  right: 0;
+}
+.location__item--dodze {
+  top: 50%;
+  left: 14%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.location__item--hospital {
+  bottom: 26%;
+  right: 0;
+}
+.location__item--armory {
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+  -ms-transform: translate(-50%, 0px);
+  transform: translate(-50%, 0px);
+}
+.location__link {
+  padding: 0.125rem 1.1875rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1.25rem;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .timer {

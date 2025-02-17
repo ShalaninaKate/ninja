@@ -18,6 +18,14 @@ if (switchBtns) {
     });
   });
 }
+const cards = document.querySelectorAll(".card");
+if (cards) {
+  cards.forEach(card => {
+    card.addEventListener("click", function () {
+      card.classList.toggle("flipped");
+    });
+  });
+}
 function initDropdowns() {
   const dropdowns = document.querySelectorAll(".input-select");
   dropdowns.forEach(dropdown => {
@@ -43,14 +51,6 @@ function initDropdowns() {
   });
 }
 initDropdowns();
-document.addEventListener("DOMContentLoaded", function () {
-  const cards = document.querySelectorAll(".card");
-  cards.forEach(card => {
-    card.addEventListener("click", function () {
-      card.classList.toggle("flipped");
-    });
-  });
-});
 function fitTextToContainers() {
   const containers = document.querySelectorAll('.container-text');
   containers.forEach(container => {
